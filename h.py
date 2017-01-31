@@ -1,5 +1,10 @@
+from random import randint
+
+
 def part(ar, beg, end):
     piv = beg
+    el = randint(beg, end)
+    ar[beg], ar[el] = ar[el], ar[beg]
     for i in range(beg + 1, end + 1):
         if ar[i] <= ar[beg]:
             piv += 1
