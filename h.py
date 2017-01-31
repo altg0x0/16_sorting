@@ -24,4 +24,3 @@ def qsort(ar, beg, end):
 n = int(input())
 arr = list(map(int, input().split()))
 print(*qsort(arr, 0, n - 1) if len(arr) > 1 else arr)
-# Not a copy
