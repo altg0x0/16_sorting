@@ -15,4 +15,4 @@ for i in range(1, n):
     ins = bis(arr[:i], el)
     shift(arr, ins, i)
     arr[ins] = el
-print(*arr
+print(*arr)
