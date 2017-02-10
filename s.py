@@ -1,0 +1,7 @@
+n = int(input())
+dis = list(map(int, input().split()))
+in_dis = sorted(range(n), key=lambda x: dis[x])
+prices = list(map(int, input().split()))
+indices = sorted(range(n), key=lambda x: prices[x], reverse=True)
+print(sum(dis[in_dis[i]] * prices[indices[i]] for i in range(n)))
+print(*(x[1] + 1 for x in sorted((in_dis[i], indices[i]) for i in range(n))))
